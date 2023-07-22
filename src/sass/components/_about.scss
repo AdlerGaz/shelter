@@ -1,0 +1,30 @@
+.about {
+    padding: 80px 0 113px;
+    background-image: url('../img/backgrounds/about-pets.png');
+    background-repeat: no-repeat;
+    background-position: 26% 44.2%;
+    
+    .wrapper {
+        text-align: left;
+        @include flex($align-items: flex-end);
+        flex-direction: column;
+    }
+    &__container {
+        min-height: 380px;
+        @include flex($align-items: flex-start);
+        flex-direction: column;
+        width: 50.4%;
+        margin-top: 15px;
+
+    }
+    &__title {
+        width: 50%;
+    }
+    &__description {
+        text-align: left;
+        width: 70%;
+        color: $color-font-description;
+        font-family: $font-additional;
+        @include font($size: 1.5rem, $height: 160%);
+    }
+}

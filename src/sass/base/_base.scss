@@ -18,7 +18,7 @@ h1  {
 }
 
 h2 {
-    @include font($size: 3.2rem, $height: 130%, $space: 2.1px);
+    @include font($size: 3.2rem, $height: 139%, $space: 3.4px);
     font-family: $font-main;
 }
 
