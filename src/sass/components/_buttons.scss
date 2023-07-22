@@ -1,0 +1,13 @@
+.button {
+    width: 211px;
+    height: 56px;
+    background-color: $color-primary;
+    border-radius: 100px;
+    color: $color-font-button;
+    font-family: $font-main;
+    @include font($size: 1.7rem, $height: 130%, $space: 1.02px);
+}
+
+.button_not-only {
+    margin-top: 40px;
+}

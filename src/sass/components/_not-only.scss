@@ -1,0 +1,19 @@
+.not-only {
+    height: 908px;
+    background-image: url('../img/backgrounds/dog.png');
+    background-repeat: no-repeat;
+    background-position: right 51%;
+    padding-top: 255px;
+    text-align: left;
+    &__title {
+        width: 30%;
+        margin: 0;
+        letter-spacing: 0;
+    }
+    &__description {
+        margin-top: 42px;
+        color: $color-font-subheading;
+        width: 39%;
+    }
+
+}

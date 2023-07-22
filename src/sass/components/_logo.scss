@@ -1,0 +1,10 @@
+.header__title {
+    font-family: $font-main;
+    color: $color-primary;
+    @include font($size: 3.2rem, $height: 110%, $space: 1.92px);
+}
+.header__description {
+    font-family: $font-additional;
+    color: $color-font-heading;
+    @include font($size: 1.3rem, $height: normal, $space: 1.3px);
+}

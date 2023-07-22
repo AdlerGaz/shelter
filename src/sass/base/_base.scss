@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+
+
+h1  {
+    font-family: $font-main;
+    @include font($size: 4.4rem, $height: 130%, $space: 2.1px);
+    color: $color-font-heading;
+}
+
+h2 {
+    @include font($size: 3.2rem, $height: 130%, $space: 2.1px);
+    font-family: $font-main;
+}
+
+h3 {
+    @include font($size: 1.5rem, $height: 160%);
+    font-family: $font-additional;
+}
+
+h4 {
+    @include font($size: 1.2rem, $height: 130%, $space: 2.1px, $style: italic);
+    font-family: $font-additional;
+}

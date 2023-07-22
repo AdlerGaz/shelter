@@ -1,0 +1,64 @@
+header {
+    height: 908px;
+    padding-top: 28px;
+    background: linear-gradient(to bottom right, #594739, #232222);
+}
+
+.header {
+    @include flex();
+    height: 60px;
+    &__logo {
+        padding-top: 4px;
+    }
+    &__description {
+        padding-top: 8px;
+    }
+}
+
+.header__nav {
+    width: 37%;
+}
+
+.nav__list {
+    @include flex();
+    .nav__elem {
+        list-style-type: none;
+        @extend %transition;
+        &:hover {
+            transform: scale(1.1);
+        }
+    } 
+    
+    .nav__link {
+        @include font($size: 1.5rem, $height: 160%);
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 21px;
+            width: 0;
+            height: 2px;
+            background-color: $color-primary;
+            @extend %transition;
+        }
+        font-family: $font-additional;
+        text-decoration: none;
+        color: $color-font-subheading;
+        position: relative;
+        
+        
+        &:hover {
+            transform: scale(1.1);
+            &::before {
+                width: 100%;
+            }
+        }
+        
+        &_active {
+            color: $color-font-nav-hover;
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}
