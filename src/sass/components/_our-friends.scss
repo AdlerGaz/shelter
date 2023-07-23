@@ -1,0 +1,39 @@
+.our-friends {
+    min-height: 697px;
+    padding: 80px 0 100px;
+    background-color: $color-friends;
+}
+
+.our-friend__title {
+    padding-bottom: 60px;
+}
+
+.slider__items,
+.slider__cards {
+    @include flex();
+}
+
+.slider__arrow-left,
+.slider__arrow-right {
+    width: 52px;
+    height: 52px;
+    border: 1px solid $color-primary;
+    border-radius: 100%;
+}
+
+.slider__card{
+    margin-right: 90px;
+    padding-bottom: 30px;
+    background-color: $color-font-nav-hover;
+    border-radius: 9px;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .slider__name {
+        color: $color-font-primary;
+        font-family: $font-main;
+        @include font($size: 2rem, $space: 1.2px);
+        padding-top: 29px;
+    }
+}

@@ -1,0 +1,68 @@
+.help {
+    padding-top: 80px ;
+    padding-bottom: 100px ;
+    .wrapper {
+        @include flex();
+        flex-direction: column;
+    }
+    &__title {
+        width: 30%;
+    }
+
+    &__icons{
+        margin-top: 60px;
+        width: 100%;
+        &__first-line {
+            width: 85%;
+            @include flex();
+            margin: 0 auto 55px;
+            
+        }
+        &__second-line {
+            width: 71%;
+            @include flex();
+            margin: 0 auto;
+            
+        }
+    }
+
+    &__icon {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 30px;
+
+        &[data-icon='icon-food'] {
+            background-image: url('../img/icons/icon-pet-food.svg');
+        }
+        &[data-icon='icon-transportation'] {
+            background-image: url('../img/icons/icon-transportation.svg');
+        }
+        &[data-icon='icon-toys'] {
+            background-image: url('../img/icons/icon-toys.svg');
+        }
+        &[data-icon='icon-bowls'] {
+            background-image: url('../img/icons/icon-bowls-and-cups.svg');
+        }
+        &[data-icon='icon-shampoos'] {
+            background-image: url('../img/icons/icon-shampoos.svg');
+        }
+        &[data-icon='icon-vitamins'] {
+            background-image: url('../img/icons/icon-vitamins.svg');
+        }
+        &[data-icon='icon-medicines'] {
+            background-image: url('../img/icons/icon-medicines.svg');
+        }
+        &[data-icon='icon-collars'] {
+            background-image: url('../img/icons/icon-collars-leashes.svg');
+        }
+        &[data-icon='icon-sleeping'] {
+            background-image: url('../img/icons/icon-sleeping-area.svg');
+        }
+    }
+    .icon__title {
+        color: $color-font-primary;
+        text-align: center;
+        @include font($size: 2rem, $height: 115%, $space: 1.2px);
+        font-family: $font-main;
+    }
+}

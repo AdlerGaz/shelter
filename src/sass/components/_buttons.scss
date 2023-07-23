@@ -1,13 +1,27 @@
 .button {
-    width: 211px;
-    height: 56px;
+    width: 207px;
+    height: 52px;
     background-color: $color-primary;
     border-radius: 100px;
     color: $color-font-button;
     font-family: $font-main;
     @include font($size: 1.7rem, $height: 130%, $space: 1.02px);
+    border: none;
 }
 
 .button_not-only {
     margin-top: 40px;
+}
+
+.button_slider {
+    width: 187px;
+    height: 52px;
+    background: transparent;
+    border: 1px solid $color-primary;
+    margin-top: 30px;
+}
+
+.button_our-friend {
+    margin-top: 61px;
+    width: 21.8%;
 }

@@ -333,10 +333,10 @@ h1 {
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-weight: 400;
-  line-height: 139%;
-  letter-spacing: 3.4px;
+  line-height: 129%;
+  letter-spacing: 2.1px;
   font-style: "normal";
   font-family: "Georgia", serif;
 }
@@ -364,23 +364,6 @@ h4 {
   padding: 0 40px;
   margin: 0 auto;
   text-align: center;
-}
-
-.container_welcome {
-  padding: 35px 0px 35px;
-}
-
-.container_favorite {
-  padding-bottom: 0;
-}
-
-.container_coffee-shop,
-.container_library-cards {
-  padding-bottom: 40px;
-}
-
-.container_contacts {
-  padding-bottom: 38px;
 }
 
 header {
@@ -460,8 +443,8 @@ header {
 }
 
 .button {
-  width: 211px;
-  height: 56px;
+  width: 207px;
+  height: 52px;
   background-color: #F1CDB3;
   border-radius: 100px;
   color: #292929;
@@ -471,10 +454,24 @@ header {
   line-height: 130%;
   letter-spacing: 1.02px;
   font-style: "normal";
+  border: none;
 }
 
 .button_not-only {
   margin-top: 40px;
+}
+
+.button_slider {
+  width: 187px;
+  height: 52px;
+  background: transparent;
+  border: 1px solid #F1CDB3;
+  margin-top: 30px;
+}
+
+.button_our-friend {
+  margin-top: 61px;
+  width: 21.8%;
 }
 
 .header__title {
@@ -551,6 +548,125 @@ header {
   line-height: 160%;
   letter-spacing: 0;
   font-style: "normal";
+}
+
+.our-friends {
+  min-height: 697px;
+  padding: 80px 0 100px;
+  background-color: #F6F6F6;
+}
+
+.our-friend__title {
+  padding-bottom: 60px;
+}
+
+.slider__items,
+.slider__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__arrow-left,
+.slider__arrow-right {
+  width: 52px;
+  height: 52px;
+  border: 1px solid #F1CDB3;
+  border-radius: 100%;
+}
+
+.slider__card {
+  margin-right: 90px;
+  padding-bottom: 30px;
+  background-color: #FAFAFA;
+  border-radius: 9px;
+}
+.slider__card:last-child {
+  margin-right: 0;
+}
+.slider__card .slider__name {
+  color: #545454;
+  font-family: "Georgia", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 1.2px;
+  font-style: "normal";
+  padding-top: 29px;
+}
+
+.help {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.help .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.help__title {
+  width: 30%;
+}
+.help__icons {
+  margin-top: 60px;
+  width: 100%;
+}
+.help__icons__first-line {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 55px;
+}
+.help__icons__second-line {
+  width: 71%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.help__icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 30px;
+}
+.help__icon[data-icon=icon-food] {
+  background-image: url("../img/icons/icon-pet-food.svg");
+}
+.help__icon[data-icon=icon-transportation] {
+  background-image: url("../img/icons/icon-transportation.svg");
+}
+.help__icon[data-icon=icon-toys] {
+  background-image: url("../img/icons/icon-toys.svg");
+}
+.help__icon[data-icon=icon-bowls] {
+  background-image: url("../img/icons/icon-bowls-and-cups.svg");
+}
+.help__icon[data-icon=icon-shampoos] {
+  background-image: url("../img/icons/icon-shampoos.svg");
+}
+.help__icon[data-icon=icon-vitamins] {
+  background-image: url("../img/icons/icon-vitamins.svg");
+}
+.help__icon[data-icon=icon-medicines] {
+  background-image: url("../img/icons/icon-medicines.svg");
+}
+.help__icon[data-icon=icon-collars] {
+  background-image: url("../img/icons/icon-collars-leashes.svg");
+}
+.help__icon[data-icon=icon-sleeping] {
+  background-image: url("../img/icons/icon-sleeping-area.svg");
+}
+.help .icon__title {
+  color: #545454;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 1.2px;
+  font-style: "normal";
+  font-family: "Georgia", serif;
 }
 
 /*# sourceMappingURL=style.css.map */
