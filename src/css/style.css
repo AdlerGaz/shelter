@@ -513,13 +513,11 @@ header {
   width: 39%;
 }
 
-.about {
+.about .wrapper {
   padding: 80px 0 113px;
   background-image: url("../img/backgrounds/about-pets.png");
   background-repeat: no-repeat;
-  background-position: 26% 44.2%;
-}
-.about .wrapper {
+  background-position: 22% 44.2%;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -540,7 +538,7 @@ header {
 }
 .about__description {
   text-align: left;
-  width: 70%;
+  width: 66%;
   color: #4C4C4C;
   font-family: "Arial", sans-serif;
   font-size: 1.5rem;
@@ -667,6 +665,72 @@ header {
   letter-spacing: 1.2px;
   font-style: "normal";
   font-family: "Georgia", serif;
+}
+
+.in-addition {
+  padding: 80px 0 100px;
+  font-family: "Georgia", serif;
+}
+.in-addition .wrapper {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+  background-image: url("../img/backgrounds/donation-dog.png");
+  background-repeat: no-repeat;
+  background-position: 23.7% center;
+}
+.in-addition__container {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 43.4%;
+  min-height: 282px;
+}
+.in-addition__title {
+  width: 56%;
+}
+.in-addition__subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.9px;
+  font-style: "normal";
+  color: #545454;
+}
+.in-addition__card {
+  color: #545454;
+  width: 67%;
+  height: 43px;
+  background-color: #F1CDB3;
+  border-radius: 9px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.in-addition__card-icon {
+  width: 30px;
+  height: 23px;
+  background-image: url("../img/icons/credit-card.svg");
+}
+.in-addition__card-number {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 1.2px;
+  font-style: "normal";
+}
+.in-addition__description {
+  width: 70%;
+  color: #B2B2B2;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
 }
 
 /*# sourceMappingURL=style.css.map */

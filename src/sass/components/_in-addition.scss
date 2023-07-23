@@ -1,0 +1,56 @@
+.in-addition {
+    padding: 80px 0 100px;
+    font-family: $font-main;
+
+    .wrapper {
+        text-align: left;
+        @include flex($align-items: flex-end);
+        flex-direction: column;
+        background-image: url('../img/backgrounds/donation-dog.png');
+        background-repeat: no-repeat;
+        background-position: 23.7% center;
+    }
+    
+    &__container {
+        text-align: left;
+        @include flex($align-items: flex-start);
+        flex-direction: column;
+        width: 43.4%;
+        min-height: 282px;
+    }
+
+    &__title {
+        width: 56%;
+    }
+
+    &__subtitle {
+        @include font($size: 1.5rem, $space: 0.9px);
+        color: $color-font-primary;
+    }
+    
+    &__card {
+        color: $color-font-primary;
+        width: 67%;
+        height: 43px;
+        background-color: $color-primary;
+        border-radius: 9px;
+        @include flex($justify-content: space-around);
+        &-icon {
+            width: 30px;
+            height: 23px;
+            background-image: url('../img/icons/credit-card.svg');
+        }
+        &-number {
+            @include font($size: 2rem, $space: 1.2px);
+        }
+    }
+    &__description {
+        width: 70%;
+        color:  #B2B2B2;
+        font-family: $font-additional;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 18px; /* 150% */
+    }
+}
