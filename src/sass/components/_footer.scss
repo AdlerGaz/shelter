@@ -1,0 +1,74 @@
+.footer {
+    background: linear-gradient(to right, #594739, #232222);
+    &__container {
+        padding: 57px 0 60px;
+        @include flex($align-items: flex-start);
+        width: 72%;
+        text-align: left;
+    }
+
+    .wrapper {
+        background-image: url('../img/backgrounds/footer-puppy.png');
+        background-repeat: no-repeat;
+        background-position: 96% 97%;
+    }
+
+    &__question,
+    &__address {
+        @include flex($align-items: flex-start);
+        flex-direction: column;
+        min-height: 234px;
+    }
+
+    .question__title,
+    .address__title {
+        width: 70%;
+        color: $color-font-heading;
+    }
+
+    .question__mail-address,
+    .question__phone-number,
+    .address__place {
+        font-family: $font-main;
+        @include font($size: 2rem, $height: 115%, $space: 1.2px);
+        color: $color-primary;
+    }
+
+    .question__mail,
+    .question__phone,
+    .address__wrapper {
+        @include flex();
+    }
+
+    .question__mail-icon,
+    .question__phone-icon {
+        width: 42px;
+        height: 32px;
+    }
+    .question__mail-icon {
+        background-image: url('../img/icons/icon-email.svg');
+    }
+    .question__phone-icon {
+        background-image: url('../img/icons/icon-phone.svg');
+    }
+
+    .address__wrapper {
+        width: 71%;
+    }
+
+    .address__icon {
+        width: 22px;
+        height: 32px;
+        background-image: url('../img/icons/icon-marker.svg');
+    }
+
+    .address__place {
+        width: 85%;
+    }
+
+    .question__mail-address,
+    .question__phone-number {
+        margin-left: 20px;
+    }
+
+}
