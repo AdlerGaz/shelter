@@ -17,8 +17,17 @@
 .slider__arrow-right {
     width: 52px;
     height: 52px;
-    border: 1px solid $color-primary;
+    border: 2px solid $color-primary;
     border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slider__arrow-left {
+    background-image: url('../img/icons/arrow-left.svg');
+}
+.slider__arrow-right {
+    background-image: url('../img/icons/arrow-right.svg');
 }
 
 .slider__card{

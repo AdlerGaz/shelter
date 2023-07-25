@@ -472,6 +472,31 @@ header {
 .button_our-friend {
   margin-top: 61px;
   width: 21.8%;
+  color: #292929;
+}
+.button_our-friend-pets {
+  width: 52px;
+  height: 52px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 1.2px;
+  font-style: "normal";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+}
+.button_our-friend-pets[disabled] {
+  background-color: transparent;
+  border: 1px solid #CDCDCD;
+  color: #CDCDCD;
+}
+
+.button_next {
+  background-color: transparent;
+  border: 1px solid #F1CDB3;
+  color: #292929;
 }
 
 .header__title {
@@ -569,8 +594,18 @@ header {
 .slider__arrow-right {
   width: 52px;
   height: 52px;
-  border: 1px solid #F1CDB3;
+  border: 2px solid #F1CDB3;
   border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slider__arrow-left {
+  background-image: url("../img/icons/arrow-left.svg");
+}
+
+.slider__arrow-right {
+  background-image: url("../img/icons/arrow-right.svg");
 }
 
 .slider__card {
@@ -804,6 +839,40 @@ header {
 .footer .question__mail-address,
 .footer .question__phone-number {
   margin-left: 20px;
+}
+
+.pets-header {
+  height: 120px;
+  background: #FFF;
+}
+.pets-header .header__title {
+  color: #545454;
+}
+.pets-header .header__description {
+  color: #292929;
+}
+.pets-header .nav__list .nav__link {
+  color: #545454;
+}
+.pets-header .nav__list .nav__link_active {
+  color: #292929;
+}
+
+.pets-main .slider__cards {
+  flex-wrap: wrap;
+  margin-right: 0;
+}
+.pets-main .slider__card {
+  margin-right: 0;
+  width: 22%;
+  margin-bottom: 31px;
+}
+.pets-main .our-friends__buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 28%;
+  margin: 31px auto 0;
 }
 
 /*# sourceMappingURL=style.css.map */

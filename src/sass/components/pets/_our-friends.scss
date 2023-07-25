@@ -1,0 +1,17 @@
+.pets-main {
+    .slider__cards {
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+    .slider__card {
+        margin-right: 0;
+        width: 22%;
+        margin-bottom: 31px;
+    }
+
+    .our-friends__buttons-container {
+        @include flex();
+        width: 28%;
+        margin: 31px auto 0;
+    }
+}

@@ -14,11 +14,13 @@
 @import "layouts/columns";
 
 // Components
-@import "components/buttons";
-@import "components/logo";
-@import "components/not-only";
-@import "components/about";
-@import "components/our-friends";
-@import "components/help";
-@import "components/in-addition";
-@import "components/footer";
+@import "components/main/buttons";
+@import "components/main/logo";
+@import "components/main/not-only";
+@import "components/main/about";
+@import "components/main/our-friends";
+@import "components/main/help";
+@import "components/main/in-addition";
+@import "components/main/footer";
+@import "components/pets/header";
+@import "components/pets/our-friends";

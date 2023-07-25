@@ -1,0 +1,26 @@
+
+.pets-header {
+    height: 120px;
+    background: $color-font-heading;
+    
+    .header {
+        &__title {
+            color: $color-font-primary;
+        }
+        &__description {
+            color: $color-font-button;
+        }
+    }
+    
+    
+    .nav__list {
+                
+        .nav__link {
+            color: $color-font-primary;
+            
+            &_active {
+                color:$color-font-button;
+            }
+        }
+    }
+}
