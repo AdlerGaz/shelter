@@ -467,6 +467,10 @@ header {
 .button:hover {
   transform: scale(1.1);
 }
+.button[disabled]:hover {
+  transform: scale(1);
+  cursor: default;
+}
 
 .button_not-only {
   margin-top: 40px;
@@ -855,6 +859,7 @@ header {
   align-items: center;
   text-decoration: none;
   transition: 0.5s;
+  cursor: pointer;
 }
 .footer .question__mail:hover,
 .footer .question__phone:hover,

@@ -12,23 +12,23 @@
     <header class="pets-header">
         <div class="wrapper">
             <div class="header">
-                <div class="header__logo">
+                <a href="../../index.html" class="header__logo" target="_blank">
                     <p class="header__title">Cozy House</p>
                     <p class="header__description">Shelter for pets in Boston</p>
-                </div>
+                </a>
                 <nav class="header__nav">
                     <ul class="nav__list">
                         <li class="nav__elem">
-                            <a class="nav__link" href="#">About the shelter</a>
+                            <a class="nav__link" href="../../index.html">About the shelter</a>
+                        </li>
+                        <li class="nav__elem nav__elem_active">
+                            <a class="nav__link" href="./src/pages/pets.html">Our pets</a>
                         </li>
                         <li class="nav__elem">
-                            <a class="nav__link nav__link_active" href="#">Our pets</a>
+                            <a class="nav__link" href="../../index.html#help">Help the shelter</a>
                         </li>
                         <li class="nav__elem">
-                            <a class="nav__link" href="#">Help the shelter</a>
-                        </li>
-                        <li class="nav__elem">
-                            <a class="nav__link" href="#">Contacts</a>
+                            <a class="nav__link" href="#footer">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -97,30 +97,32 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="wrapper">
             <div class="footer__container">
                 <div class="footer__question">
                     <h2 class="question__title">For questions and suggestions</h2>
-                    <div class="question__mail">
+                    <a href="mailto:email@shelter.com" class="question__mail" target="_blank">
                         <div class="question__mail-icon"></div>
                         <div class="question__mail-address">email@shelter.com</div>
-                    </div>
-                    <div class="question__phone">
+                    </a>
+                    <a href="tel:+136745677554" class="question__phone" target="_blank">
                         <div class="question__phone-icon"></div>
                         <div class="question__phone-number">+13 674 567 75 54</div>
-                    </div>
+                    </a>
                 </div>
                 <div class="footer__address">
                     <h2 class="address__title">We are waiting for your visit</h2>
-                    <div class="address__wrapper">
+                    <a href="https://www.google.com/maps/search/1+central+street+boston/@42.3144474,-71.0526843,12z/data=!3m1!4b1?entry=ttu"
+                        class="address__wrapper" target="_blank">
                         <div class="address__icon"></div>
                         <p class="address__place">1 Central Street, Boston (entrance from the store)</p>
-                    </div>
-                    <div class="address__wrapper">
+                    </a>
+                    <a href="https://www.google.com/maps/search/18+South+Park++London/@51.5289361,-0.2664035,11z/data=!3m1!4b1?entry=ttu"
+                        class="address__wrapper" target="_blank">
                         <div class="address__icon"></div>
                         <p class="address__place">18 South Park, London </p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
