@@ -23,6 +23,15 @@
     background-position: center center;
 }
 
+.slider__arrow-left,
+.slider__arrow-right {
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
 .slider__arrow-left {
     background-image: url('../img/icons/arrow-left.svg');
 }
@@ -35,8 +44,14 @@
     padding-bottom: 30px;
     background-color: $color-font-nav-hover;
     border-radius: 9px;
+    cursor: pointer;
+    @extend %transition;
     &:last-child {
         margin-right: 0;
+    }
+
+    &:hover {
+        transform: scale(1.05);
     }
 
     .slider__name {

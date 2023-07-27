@@ -8,3 +8,13 @@
     color: $color-font-heading;
     @include font($size: 1.3rem, $height: normal, $space: 1.3px);
 }
+
+.header__logo {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    @extend %transition;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

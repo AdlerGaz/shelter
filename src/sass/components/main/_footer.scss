@@ -38,6 +38,11 @@
     .question__phone,
     .address__wrapper {
         @include flex();
+        text-decoration: none;
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     .question__mail-icon,

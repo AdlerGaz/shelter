@@ -35,6 +35,8 @@
         background-color: $color-primary;
         border-radius: 9px;
         @include flex($justify-content: space-around);
+        transition: 0.5s;
+
         &-icon {
             width: 30px;
             height: 23px;
@@ -42,6 +44,12 @@
         }
         &-number {
             @include font($size: 2rem, $space: 1.2px);
+            text-decoration: none;
+            color: $color-font-primary;
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
     &__description {

@@ -7,6 +7,11 @@
     font-family: $font-main;
     @include font($size: 1.7rem, $height: 130%, $space: 1.02px);
     border: none;
+    @extend %transition;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .button_not-only {

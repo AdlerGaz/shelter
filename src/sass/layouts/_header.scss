@@ -28,6 +28,20 @@ header {
             transform: scale(1.1);
         }
     } 
+    .nav__elem_active{
+        cursor: default;
+        &:hover {
+            transform: scale(1);
+        }
+        
+        .nav__link {
+            cursor: default;
+            color: $color-font-nav-hover;
+            &::before {
+                width: 100%;
+            }
+        }
+    }
     
     .nav__link {
         @include font($size: 1.5rem, $height: 160%);
@@ -48,17 +62,16 @@ header {
         
         
         &:hover {
-            transform: scale(1.1);
             &::before {
                 width: 100%;
+            }
+            .nav__link_active {
+                transform: scale(0.1);
             }
         }
         
-        &_active {
-            color: $color-font-nav-hover;
-            &::before {
-                width: 100%;
-            }
-        }
+        
+
+        
     }
 }
